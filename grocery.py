@@ -47,12 +47,12 @@ def generate_receipt(cart):
     print(f"\nTotal cost: P{total_cost:.2f}")
 
 def buy_product(name, quantity):
-    global total_purchased_value  # Access total purchased value
+    global total_purchased_value  
     if name in inventory:
         if inventory[name]['quantity'] >= quantity:
             inventory[name]['quantity'] -= quantity
             total_cost = inventory[name]['price'] * quantity
-            total_purchased_value += total_cost  # Update total purchased value
+            total_purchased_value += total_cost  
             print(f"You have purchased {quantity} {name.title()}(s) for P{total_cost}.")
         else:
             print(f"Insufficient quantity in inventory for {name.title()}. Cannot complete the purchase.")
