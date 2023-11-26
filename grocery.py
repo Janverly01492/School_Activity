@@ -59,7 +59,6 @@ def buy_product(name, quantity):
     else:
         print("Product not found in inventory.")
 
-# Main loop
 cart = {}  # Initialize the cart outside the loop
 buying_enabled = True  # Flag to enable or disable buying
 
