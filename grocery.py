@@ -5,7 +5,7 @@ inventory = {
     'Guava': {'price': 150.25, 'quantity': 100}
 }
 
-total_purchased_value = 0  # Initialize the total purchased value
+total_purchased_value = 0 
 
 def add_product(name, price, quantity):
     if name in inventory:
