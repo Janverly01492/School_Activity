@@ -97,7 +97,7 @@ def set_manager_program():
         elif choice == "3":
             get_remove_element_input()
         elif choice == "4":
-            display_set(input("Enter set name(s): "))
+            display_set(input("Enter set name(s) or type 'all': "))
         elif choice == "5":
             get_set_operation_input()
         elif choice == "6":
